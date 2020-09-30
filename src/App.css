@@ -1,7 +1,10 @@
-
+html, body, div{
+  height: 100%;
+}
 div, header{
   box-sizing: border-box;  
 }
+
 
 .flex {
   display: flex;
