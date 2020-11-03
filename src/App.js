@@ -11,19 +11,17 @@ import './App.css'
 function App() {
   return (
     <div className="app global-bg">
-
       <Router>
         <Header></Header>
-        <div>
+        <div className="main">
           <Route path="/" exact component={Home}></Route>
           <Route path="/about" component={About}></Route>
           <Route path="/photos" component={Photo}></Route>
           <Route path="/tags" component={Tags}></Route>
           <Route path="/contact" component={Contact}></Route>
         </div>
-        
       </Router>
-      {/* <Footer></Footer> */}
+      <Footer></Footer>
     </div>
   );
 }

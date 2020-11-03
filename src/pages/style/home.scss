@@ -1,0 +1,8 @@
+
+.note-item{
+  border-bottom: 1px solid #222;
+  cursor: pointer;
+  &:last-child{
+    border-bottom: none;
+  }
+}
