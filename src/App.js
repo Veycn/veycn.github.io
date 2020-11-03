@@ -10,11 +10,10 @@ import Footer from "./components/Footer"
 import './App.css'
 function App() {
   return (
-    <div className="app">
+    <div className="app global-bg">
 
       <Router>
         <Header></Header>
-
         <div>
           <Route path="/" exact component={Home}></Route>
           <Route path="/about" component={About}></Route>
