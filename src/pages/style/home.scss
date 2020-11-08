@@ -1,8 +1,47 @@
+.notes {
+  padding: 18px;
 
-.note-item{
-  border-bottom: 1px solid #222;
-  cursor: pointer;
-  &:last-child{
-    border-bottom: none;
+  .note-item {
+    border-bottom: 1px solid #eee;
+    font-size: 16px;
+    cursor: pointer;
+    margin-bottom: 12px;
+    padding-bottom: 12px;
+    &:last-child {
+      border-bottom: none;
+    }
+    .note-title{
+      font-size: 18px;
+      font-weight: bold;
+      padding: 6px 2px;
+      text-align: center;
+    }
+    .note-desc{
+      font-size: 10px;
+    }
+    .note-content{
+      font-size: 14px;
+      color: #333;
+      text-indent: 2em;
+      padding-top: 16px;
+    }
   }
 }
+
+  .view {
+    .sign {
+      width: 100%;
+      height: 250px;
+      background-image: url(https://cdn.jsdelivr.net/gh/V-Vincen/V-Vincen.github.io/img/header_img/newhome_bg.jpg);
+      background-size: 100% auto;
+      background-repeat: no-repeat;
+      padding: 20px;
+
+      .content {
+        font-size: 16px;
+        color: #fff;
+        line-height: 28px;
+        text-align: center;
+      }
+    }
+  }

@@ -1,15 +1,14 @@
-html, body{
+/* html, body{
   width: 100%;
   height: 100%;
-}
+} */
 div, header{
   box-sizing: border-box;  
 }
 
 .app{
   position: relative;
-  width: 100%;
-  height: 100%;
+  min-width: 375px;
 }
 
 ul, li {
@@ -35,24 +34,87 @@ button, textarea, input {
   justify-content: space-between;
 }
 
-.global-bg{
-  background: #7f7fd5; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #91eae4,
-    #86a8e7,
-    #7f7fd5
-  ); /* Chrome 10-25, Safari 5.1-6 */
+/* .global-bg{
+  background: #7f7fd5;
   background: linear-gradient(
     to right,
     #91eae4,
     #86a8e7,
     #7f7fd5
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  );
+} */
+
+.main{
+  padding-bottom: 20px;
 }
 
-.main {
-  margin: 20px 200px;
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
 }
 
+@font-face {
+  font-family: 'iconfont';  /* project id 2188526 */
+  src: url('//at.alicdn.com/t/font_2188526_yltwzild6z.eot');
+  src: url('//at.alicdn.com/t/font_2188526_yltwzild6z.eot?#iefix') format('embedded-opentype'),
+  url('//at.alicdn.com/t/font_2188526_yltwzild6z.woff2') format('woff2'),
+  url('//at.alicdn.com/t/font_2188526_yltwzild6z.woff') format('woff'),
+  url('//at.alicdn.com/t/font_2188526_yltwzild6z.ttf') format('truetype'),
+  url('//at.alicdn.com/t/font_2188526_yltwzild6z.svg#iconfont') format('svg');
+}
 
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-caidan:before {
+  content: "\e61a";
+}

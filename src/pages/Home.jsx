@@ -8,21 +8,24 @@ export default class Home extends Component {
       return (
         <li className="note-item" key={index}>
           <h3 className="note-title">{note.title}</h3>
-          <div>
+          <div className="note-desc">
             <span className="note-date">{note.date}</span>
             {
-              note.tags.map((tag) => <span key={tag.name}>{tag.name}</span>)
+              note.tags.map((tag) => <span key={tag.name} className="tag">{tag.name}</span>)
             }
           </div>
-          <p>{note.desc}</p>
+          <p className="note-content">{note.desc}</p>
         </li>
       )
     })
     return (
       <div className="view">
-        <ul>
+        <div className="sign">
+          <p className="content">sdlksdlkdjlasdjlasd ladjlaskdjlkasdjlasd  djlksdjalskdjlsakdla d als daslkdasldfghequoihjdqwoe </p>
+        </div>
+        <div className="notes">
           {noteList}
-        </ul>
+        </div>
       </div>
     )
   }

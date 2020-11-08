@@ -1,32 +1,24 @@
 .header {
-  height: 60px;
+  height: 50px;
   background-color: #abcdef;
   position: sticky;
   left: 0;
   top: 0;
-  padding: 0 200px;
-  background: #7f7fd5; /* fallback for old browsers */
-  background: -webkit-linear-gradient(
-    to right,
-    #91eae4,
-    #86a8e7,
-    #7f7fd5
-  ); /* Chrome 10-25, Safari 5.1-6 */
-  background: linear-gradient(
-    to right,
-    #91eae4,
-    #86a8e7,
-    #7f7fd5
-  ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  padding: 0 20px;
+  // background: #7f7fd5;
+
+  // background: linear-gradient(
+  //   to right,
+  //   #91eae4,
+  //   #86a8e7,
+  //   #7f7fd5
+  // );
   border-bottom: 1pxs solid #ccc;
 
   .sign-content {
-    line-height: 60px;
-    font-size: 30px;
+    line-height: 50px;
+    font-size: 24px;
     font-weight: 500;
-    .logo{
-      padding-right: 20px;
-    }
     .sign {
       font-size: 12px;
       line-height: 1;
@@ -36,10 +28,59 @@
   .routes{
     .router-link{
       display: inline-block;
-      line-height: 60px;
+      line-height: 50px;
       padding: 0 20px;
       text-decoration: none;
+      font-size: 16px;
       cursor: pointer;
+    }
+  }
+  .menu{
+    position: relative;
+    display: none;
+    width: 50px;
+    height: 50px;
+    text-align: center;
+    .iconfont{
+      font-size: 30px;
+      line-height: 50px;
+    }
+    .menu-wrapper{
+      position: absolute;
+      left: -16px;
+      top: 56px;
+      border-radius: 4px;
+      background-color: #fff;
+      box-shadow: rgba(0,0,0,.117647) 0 1px 6px, rgba(0,0,0,.239216) 0 1px 4px;
+      transform-origin: top center;
+      .router-link{
+        font-size: 16px;
+        display: block;
+        width: 60px;
+        padding: 10px;
+        color: #333;
+      }
+      &.show{
+        opacity: 1;
+        transform: scale(1);
+        transition: all .3s cubic-bezier(.23,1,.32,1);
+      }
+      &.hide{
+        opacity: 0;
+        transform: scale(0);
+        transition: all .3s cubic-bezier(.23,1,.32,1);
+      }
+    }
+  }
+}
+
+@media screen and (max-width: 375px){
+  .header{
+    .routes{
+      display: none;
+    }
+    .menu{
+      display: block;
     }
   }
 }

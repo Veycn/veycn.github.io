@@ -7,6 +7,7 @@ import Tags from './pages/Tags'
 import Contact from './pages/Contact'
 import Header from "./components/Header"
 import Footer from "./components/Footer"
+import './utils/flexible.js'
 import './App.css'
 function App() {
   return (
